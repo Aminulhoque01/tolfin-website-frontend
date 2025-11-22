@@ -8,7 +8,7 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     const checkAuthStatus = () => {
-      // Get cookies from document
+       
       const cookies = parse(document.cookie);
 
       const accessToken = cookies?.accessToken || null;
