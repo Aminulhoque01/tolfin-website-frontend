@@ -2,8 +2,7 @@
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
  
-import { parse } from "cookie"; // Importing the cookie parser package
-
+import { parse } from "cookie";  
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   const dispatch = useDispatch();
 
