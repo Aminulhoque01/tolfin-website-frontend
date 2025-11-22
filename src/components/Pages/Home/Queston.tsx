@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 import Image from 'next/image';
 import { useState } from 'react';
@@ -7,7 +8,7 @@ import Group from "@/assets/about/Group .png"
 export default function Question() {
     const [isOpen, setIsOpen] = useState(null);
 
-    const toggleQuestion = (index: any) => {
+    const toggleQuestion = (index:any) => {
         setIsOpen(isOpen === index ? null : index);
     };
 

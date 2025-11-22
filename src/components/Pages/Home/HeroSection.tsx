@@ -4,22 +4,17 @@
 
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
+ 
 import { EffectFade, Autoplay } from "swiper/modules";
 import heroImage from "@/assets/hero/heroImage.png";
 import useUser from "@/hooks/useUser";
-import { useDispatch } from "react-redux";
+ 
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 
 const HeroSection = () => {
   const user = useUser();
-  const dispatch = useDispatch();
-  const handleJoinNow = () => {
-    // dispatch(openModal());
-  };
+  
 
   return (
     <section className="w-full lg:h-screen relative overflow-x-hidden">

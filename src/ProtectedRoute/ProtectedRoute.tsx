@@ -1,7 +1,7 @@
 "use client";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
-import { openModal } from "@/redux/features/auth/authSlice";
+ 
 import { parse } from "cookie"; // Importing the cookie parser package
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
@@ -16,7 +16,7 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
       const refreshToken = cookies?.refreshToken || null;
 
       if (!accessToken || !refreshToken) {
-        dispatch(openModal()); // Open modal if not authenticated
+         
       }
     };
 

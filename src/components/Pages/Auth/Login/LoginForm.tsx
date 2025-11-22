@@ -2,8 +2,8 @@
 import Button from "@/components/ui/ButtonComponent";
 import InputComponent from "@/components/ui/InputComponent";
 import { useLoginMutation } from "@/redux/features/auth/authApi";
-import { closeModal } from "@/redux/features/auth/authSlice";
-import { useAppDispatch } from "@/redux/hooks";
+ 
+ 
 import { storeTokens } from "@/services/auth.services";
 import { LoginFormValues } from "@/types/authTypes";
 import { TError } from "@/types/error";
@@ -23,7 +23,7 @@ const LoginForm = ({
   ) => void;
 }) => {
   const [loginUser, { isLoading }] = useLoginMutation();
-  const dispatch = useAppDispatch();
+ 
   const router = useRouter();
   const onFinish = async (values: LoginFormValues) => {
     try {
@@ -38,7 +38,7 @@ const LoginForm = ({
         res?.data?.attributes?.tokens?.refreshToken
       );
       router.refresh();
-      dispatch(closeModal());
+       
     } catch (error) {
       const err = error as TError;
       toast.error(err?.data?.message || "Something went wrong!");

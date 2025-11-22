@@ -5,8 +5,9 @@ export default function PricingCard() {
     return (
         <section className="py-12 text-white">
             <div className="w-full container mx-auto">
-                <h2 className="text-3xl font-semibold mb-5 ">Pricing Structure</h2>
-                <p className="text-xl mb-4 ">"Flexible & Transparent Pricing"</p>
+                <h2 className="text-3xl font-semibold mb-5 ">Pricing Struct
+                    ure</h2>
+                <p className="text-xl mb-4 ">Flexible & Transparent Pricing</p>
                 <p className="text-lg mb-12 ">
                     Choose from retainer plans or on-demand services to match your specific needs and budget.
                 </p>

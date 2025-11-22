@@ -8,7 +8,7 @@ const ContactForm = () => {
 
           <div className="bg-[#4F6367] flex-1 p-10 rounded-lg">
             <h2 className="text-3xl font-bold mb-6">Contact Details</h2>
-            <p className="text-lg mb-4">We're here to assist you—reach out for security solutions and support.</p>
+            <p className="text-lg mb-4">We are here to assist you—reach out for security solutions and support.</p>
 
             <div className="mb-4">
               <p>Email:</p>

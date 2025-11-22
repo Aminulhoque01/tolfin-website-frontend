@@ -6,8 +6,9 @@ import pailoat from '@/assets/choose/user.png';
 import pail from '@/assets/choose/threuser.png';
 import Frame from '@/assets/choose/locksetting.png';
 import choo4se from '@/assets/choose/settingdoller.png';
-import { FaArrowRight } from 'react-icons/fa';
+ 
 import Link from 'next/link';
+import { FaArrowRight } from 'react-icons/fa';
 
 const ServiceSection: React.FC = () => {
     return (
@@ -16,7 +17,7 @@ const ServiceSection: React.FC = () => {
                 {/* Left Side Content */}
                 <h1 className="text-4xl font-semibold text-white mb-4">WHY CHOOSE US</h1>
                 <p className="text-lg text-gray-400 mb-8">
-                    "Why Trust Tolfin Global?" <br />
+                    Why Trust Tolfin Global? <br />
                     With proven expertise, a highly trained team, and advanced technology, we deliver unmatched security and protocol service.
                 </p>
 

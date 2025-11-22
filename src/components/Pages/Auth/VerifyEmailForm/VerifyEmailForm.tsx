@@ -1,8 +1,8 @@
 "use client";
 import Button from "@/components/ui/ButtonComponent";
 import { useVerifyEmailMutation } from "@/redux/features/auth/authApi";
-import { closeModal } from "@/redux/features/auth/authSlice";
-import { useAppDispatch } from "@/redux/hooks";
+ 
+ 
 import { storeTokens } from "@/services/auth.services";
 import { TError } from "@/types/error";
 import Cookies from "js-cookie";
@@ -25,7 +25,7 @@ const VerifyEmailForm = ({
   const [verifyEmail, { isLoading }] = useVerifyEmailMutation();
   const [oneTimeCode, setOneTimeCode] = useState<string>("");
   const verifyToken = Cookies.get("verify-token");
-  const dispatch = useAppDispatch();
+ 
   const router = useRouter();
   // Handle OTP change
   const handleOtpChange = (otpValue: string) => {
@@ -48,7 +48,7 @@ const VerifyEmailForm = ({
       }
       toast.success(res.message);
       if (type === "register") {
-        dispatch(closeModal());
+       
         router.push("/add-photos");
       } else {
         toggleTab("resetPassword");
